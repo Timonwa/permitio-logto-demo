@@ -1,7 +1,7 @@
 import LogtoClient, { UserScope } from "@logto/next";
 
 export const logtoClient = new LogtoClient({
-  scopes: [UserScope.Email],
+  scopes: [UserScope.Email], // Request email scope for user identification
   endpoint: process.env.LOGTO_ENDPOINT,
   appId: process.env.LOGTO_APP_ID,
   appSecret: process.env.LOGTO_APP_SECRET,
